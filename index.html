@@ -5,40 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon portfolio</title>
   <link rel="shortcut icon" href="./images/profil.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <!-- Header/ l'entete -->
-  <div>
+  <header>
     <!-- Logo -->
     <div>
       <img src="./images/profil.png" alt="Logo">
     </div>
     <!-- Menu -->
-    <div>
+    <nav id="navbar">
       <ul>
         <li><a href="./index.html">Accueil</a></li>
         <li><a href="./pages/about.html">À propos</a></li>
-        <li><a href="">Projets</a></li>
-        <li><a href="">Experiences</a></li>
-        <li><a href="">Formations</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="./pages/projects.html">Projets</a></li>
+        <li><a href="./pages/experiences.html">Experiences</a></li>
+        <li><a href="./pages/formations.html">Formations</a></li>
+        <li><a href="./pages/contact.html">Contactez-Moi</a></li>
       </ul>
-    </div>
+    </nav>
     <!-- Social Media -->
-    <div></div>
-  </div>
+    <div>
+      
+    </div>
+  </header>
   <!-- Fin Header/ Fin de l'entete -->
 
-  <!-- Banner/Banniere -->
-  <div>
-    <!-- Text Banner -->
-    <div>
+  <main>
+    <!-- Banner/Banniere -->
+    <section class="banner">
+      <!-- Text Banner -->
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Banner Image -->
+      <div></div>
+    </section>
+    <!-- Fin Banner/ Fin de la banniere -->
+
+    <!-- About -->
+    <section>
       <div></div>
       <div></div>
-    </div>
-    <!-- Banner Image -->
-    <div></div>
-  </div>
-  <!-- Fin Banner/ Fin de la banniere -->
+    </section>
+    <!-- Fin About -->
+
+    <!-- Projects -->
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <!-- Fin Projects -->
+
+
+    <!-- Contactez Moi -->
+    <section>
+      <form method="post">
+        <div>
+          <label for="fullname">Nom Complet :</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Entrez votre nom ..." required>
+        </div>
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" placeholder="Entrez votre email ..." required>
+        </div>
+        <div>
+          <label for="subject">Sujet :</label>
+          <input type="text" id="subject" name="subject" placeholder="Entrez le sujet de votre message ..." required>
+        </div>
+        <div>
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="10" cols="40" placeholder="Entrez votre message ..." required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </section>
+    <!-- Fin Contactez Moi -->
+  </main>
+
+  <footer></footer>
+
 </body>
 </html>
