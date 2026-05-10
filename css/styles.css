@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Fjalla One", sans-serif;
+}
+
+:root {
+    --primary-color: rgb(176, 7, 7);
 }
 
 li {
@@ -15,12 +20,25 @@ a {
     color: rgb(86, 86, 86);
 }
 
+.button {
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    color: white;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgba(140, 29, 29, 0.475);
+}
+
 header {
     position: fixed;
     display: flex;
     width: 100%;
     height: 10vh;
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    box-shadow: rgba(33, 35, 38, 0.015) 0px 10px 10px -10px;
+    background-color: white;
 }
 
 header .header_logo {
@@ -57,8 +75,9 @@ header .header_navbar ul li {
 }
 
 header .header_navbar ul li:hover {
-    background-color: rgb(176, 7, 7);
+    background-color: var(--primary-color);
     padding: 10px;
+
     & a {
         color: white;
     }
@@ -66,7 +85,6 @@ header .header_navbar ul li:hover {
 
 header .header_navbar ul li a {
     font-size: 18px;
-    font-family:"Fjalla One", sans-serif;
     font-weight: 300;
 }
 
@@ -82,7 +100,7 @@ header .header_button a {
     background-color: rgb(176, 7, 7);
     padding: 7px;
     color: white;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 .banner {
@@ -90,20 +108,192 @@ header .header_button a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
-.banner .banner_text{
+.banner .banner_text {
     width: 50%;
-    height: 90vh;
-    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+}
+
+.banner .banner_text h2 {
+    font-size: 65px;
+    text-align: center;
+}
+
+.banner .banner_text p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 200 !important;
 }
 
 .banner .banner_image {
     width: 50%;
-    height: 90vh;
-    background-image: url(../images/banner/banner.jpg);
-    background-size: cover;
-    background-position: center center;
-    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+}
+
+.about .about_image {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about_image img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.about .about_text {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.about .about_text h2 {
+    font-size: 60px;
+}
+
+.about .about_text p {
+    font-size: 20px;
+    line-height: 2rem;
+    font-weight: 200 !important;
+}
+
+.projects {
+    width: 100%;
+}
+
+.projects .project_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects .project_title h2 {
+    font-size: 60px;
+}
+
+.projects .project_title p {
+    font-size: 20px;
+    font-weight: 200 !important;
+}
+
+.projects .project_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    gap: 25px;
+}
+
+.projects .project_list .project_item {
+    width: 30%;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    transition: 0.5s ease-in-out;
+}
+
+.projects .project_list .project_item:hover {
+    transform: scale(0.9);
+}
+
+.projects .project_list .project_item .project_item_cover {
+    width: 100%;
+    height: 70%;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.projects .project_list .project_item .project_item_text {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header .header_navbar {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner .banner_text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .banner .banner_text h2 {
+        font-size: 40px;
+    }
+
+    .banner .banner_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .about_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .about_text {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .about_text h2 {
+        font-size: 40px;
+
+    }
+
+    .projects .project_list .project_item {
+        width: 90%;
+    }
 }

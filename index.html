@@ -1,84 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon portfolio</title>
-  <link rel="shortcut icon" href="./images/profil.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <!-- Header/ l'entete -->
-  <header>
-    <!-- Logo -->
-    <div class="header_logo">
-      <img src="./images/profil.png" alt="Logo">
-    </div>
-    <!-- Menu -->
-    <nav class="header_navbar">
-      <ul>
-        <li><a href="./index.html">Accueil</a></li>
-        <li><a href="./pages/about.html">À propos</a></li>
-        <li><a href="./pages/projects.html">Projets</a></li>
-        <li><a href="./pages/experiences.html">Experiences</a></li>
-        <li><a href="./pages/formations.html">Formations</a></li>
-        <li><a href="./pages/contact.html">Contactez-Moi</a></li>
-      </ul>
-    </nav>
-    <!-- Social Media -->
-    <div class="header_button">
-      <a href="https://facebook.com" target="_blank">
-        FB
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        TW
-      </a>
-    </div>
-  </header>
-  <!-- Fin Header/ Fin de l'entete -->
 
-  <main>
-    <!-- Banner/Banniere -->
-    <section class="banner">
-      <!-- Text Banner -->
-      <div class="banner_text">
-        <div></div>
-        <div></div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="shortcut icon" href="./images/profil.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0560fe03a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+    <!-- Header/ l'entete -->
+    <header>
+      <!-- Logo -->
+      <div class="header_logo">
+        <img src="./images/profil.png" alt="Logo">
       </div>
-      <!-- Banner Image -->
-      <div class="banner_image"></div>
-    </section>
-    <!-- Fin Banner/ Fin de la banniere -->
-
-        <!-- Banner/Banniere -->
-    <section class="banner">
-      <!-- Text Banner -->
-      <div class="banner_text">
-        <div></div>
-        <div></div>
+      <!-- Menu -->
+      <nav class="header_navbar">
+        <ul>
+          <li>
+            <a href="./index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="./pages/about.html">À propos</a>
+          </li>
+          <li>
+            <a href="./pages/projects.html">Projets</a>
+          </li>
+          <li>
+            <a href="./pages/experiences.html">Experiences</a>
+          </li>
+          <li>
+            <a href="./pages/formations.html">Formations</a>
+          </li>
+          <li>
+            <a href="./pages/contact.html">Contactez-Moi</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Social Media -->
+      <div class="header_button">
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
       </div>
-      <!-- Banner Image -->
-      <div class="banner_image"></div>
-    </section>
-    <!-- Fin Banner/ Fin de la banniere -->
-    <!-- About -->
-    <section class="about">
-      <div></div>
-      <div></div>
-    </section>
-    <!-- Fin About -->
+    </header>
+    <!-- Fin Header/ Fin de l'entete -->
 
-    <!-- Projects -->
-    <section>
-      <div></div>
-      <div></div>
-      <div></div>
-    </section>
-    <!-- Fin Projects -->
+    <main>
+      <!-- Banner/Banniere -->
+      <section class="banner">
+        <!-- Text Banner -->
+        <div class="banner_text">
+          <h2>Hello, Je suis un Web Designer</h2>
+          <p>Je crée des sites web modernes et attrayants.</p>
+          <a href="./pages/contact.html" class="button banner_button">Contactez-Moi</a>
+        </div>
 
-  </main>
+        <!-- Banner Image -->
+        <div class="banner_image">
+          <img src="./images/banner/banner1.png" alt="">
+        </div>
+      </section>
+      <!-- Fin Banner/ Fin de la banniere -->
 
-  <footer></footer>
+      <!-- About -->
+      <section class="about">
+        <div class="about_image">
+          <img src="./images/about/about.jpg" alt="">
+        </div>
+        <div class="about_text">
+          <h2>À propos de moi</h2>
+          <p>Je suis un développeur web passionné avec une expérience dans la création de sites web modernes et fonctionnels. J'aime relever les défis et trouver des solutions créatives pour répondre aux besoins de mes clients.</p>
+          <a href="./pages/about.html" class="button">En savoir +</a>
+        </div>
+      </section>
+      <!-- Fin About -->
 
-</body>
+      <!-- Projects -->
+      <section class="projects">
+        <div class="project_title">
+          <h2>Mes Projets</h2>
+          <p>Voici une sélection de mes derniers projets web.</p>
+        </div>
+        <div class="project_list">
+          <div class="project_item">
+            <div class="project_item_cover">
+              <img src="./images/projects/1.jpg" alt="">
+            </div>
+            <div class="project_item_text">
+              <h2>Projet 1</h2>
+              <p>Description du projet 1.</p>
+              <a href="./pages/projects.html" class="button">Voir le projet</a>
+            </div>
+          </div>
+          <div class="project_item">
+            <div class="project_item_cover">
+              <img src="./images/projects/2.jpg" alt="">
+            </div>
+            <div class="project_item_text">
+              <h2>Projet 2</h2>
+              <p>Description du projet 2.</p>
+              <a href="./pages/projects.html" class="button">Voir le projet</a>
+            </div>
+          </div>
+          <div class="project_item">
+            <div class="project_item_cover">
+              <img src="./images/projects/3.jpg" alt="">
+            </div>
+            <div class="project_item_text">
+              <h2>Projet 3</h2>
+              <p>Description du projet 3.</p>
+              <a href="./pages/projects.html" class="button">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Projects -->
+
+    </main>
+
+    <footer></footer>
+
+  </body>
+
 </html>
