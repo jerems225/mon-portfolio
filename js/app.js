@@ -135,5 +135,12 @@ function updateUser(id, newData) {
     }
 }
 
-const updateUserResult = updateUser(2, { lastName: "Doe" });
-console.log(updateUserResult);
+// const updateUserResult = updateUser(2, { lastName: "Doe" });
+// console.log(updateUserResult);
+
+
+
+let sentence = "hello, how are you doing today?";
+sentence = sentence.replace(sentence.charAt(0), sentence.charAt(0).toUpperCase());
+
+console.log(sentence);

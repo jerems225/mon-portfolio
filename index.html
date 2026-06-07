@@ -14,7 +14,7 @@
     <!-- Header/ l'entete -->
     <header>
       <!-- Logo -->
-      <div class="header_logo">
+      <div class="header_logo" id="logo">
         <img src="./images/profil.png" alt="Logo">
       </div>
       <!-- Menu -->
@@ -78,7 +78,7 @@
         <div class="about_text">
           <h2>À propos de moi</h2>
           <p>Je suis un développeur web passionné avec une expérience dans la création de sites web modernes et fonctionnels. J'aime relever les défis et trouver des solutions créatives pour répondre aux besoins de mes clients.</p>
-          <a href="./pages/about.html" class="button">En savoir +</a>
+          <a class="button" onclick="toggleAboutText()">En savoir +</a>
         </div>
       </section>
       <!-- Fin About -->
@@ -127,6 +127,6 @@
     </main>
 
     <footer></footer>
-    <script src="./js/app.js"></script>
+    <script src="./js/dom.js"></script>
   </body>
 </html>

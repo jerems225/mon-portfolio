@@ -139,6 +139,14 @@ header .header_button a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.banner .banner_image.animate {
+    transform: rotate(60deg) scale(0.95);
+    border: 3px solid var(--primary-color);
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
 }
 
 .about {
