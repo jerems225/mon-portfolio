@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio | Panier</title>
+    <link rel="shortcut icon" href="../../images/profil.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0560fe03a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/shop.css">
+  </head>
+
+  <body>
+    <!-- Header/ l'entete -->
+    <header>
+      <!-- Logo -->
+      <div class="header_logo" id="logo">
+        <img src="../../images/profil.png" alt="Logo">
+      </div>
+      <!-- Menu -->
+      <nav class="header_navbar">
+        <ul>
+          <li>
+            <a href="../../index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="../../pages/about.html">À propos</a>
+          </li>
+          <li>
+            <a href="../../pages/projects.html">Projets</a>
+          </li>
+          <li>
+            <a href="../../pages/experiences.html">Experiences</a>
+          </li>
+          <li>
+            <a href="../../pages/formations.html">Formations</a>
+          </li>
+          <li>
+            <a href="../../pages/contact.html">Contactez-Moi</a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- Social Media -->
+      <div class="header_button">
+        <a href="#" class="button btn_shop">
+          <span class="fa-solid fa-shopping-cart"></span>
+          Panier (<span class="cart-count">0</span>)</a>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </header>
+    <!-- Fin Header/ Fin de l'entete -->
+
+    <main>
+      <section class="cart">
+        <div class="cart_container">
+          <div class="cart_title">
+            <h2>Votre Panier</h2>
+          </div>
+          <div class="cart_items">
+            <div class="cart_item">
+              <div class="cart_product_details">
+                <div class="cart_product_image">
+                  <img src="../../images/shop/products/product1.jpg" alt="Product 1">
+                </div>
+                <div class="cart_product_info">
+                  <h3>Produit 1</h3>
+                  <p>Prix: $10.00</p>
+                  <p>Quantité: 1</p>
+                </div>
+              </div>
+              <div class="cart_button">
+                <div class="favorite">
+                    <a class="button light">
+                        <i class="fa-regular fa-heart"></i> Save
+                    </a>
+                </div>
+                <div class="delete">
+                    <a class="btn btn-danger button">
+                        <i class="fa-trash"></i> Supprimer
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="../../js/dom.js"></script>
+  </body>
+
+</html>
